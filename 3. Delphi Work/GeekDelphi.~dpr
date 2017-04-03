@@ -1,0 +1,17 @@
+program GeekDelphi;
+
+uses
+  Forms,
+  uGeekDelphi in 'View\uGeekDelphi.pas' {FormMain},
+  UVendas in 'UVendas.pas' {FrmVendas},
+  uModelVendas in 'Model\uModelVendas.pas',
+  ControleVendas in 'Controle\ControleVendas.pas',
+  VendasDAO in 'DAO\VendasDAO.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TFormMain, FormMain);
+  Application.Run;
+end.
